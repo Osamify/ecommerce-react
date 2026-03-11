@@ -3,7 +3,9 @@ import './HomePage.css'
 export function HomePage() {
     return (
         <>
+            <link rel="icon" type="image/svg+xml"to="/public/images/icons/home-favicon.png" />
             <title>Home</title>
+
             <Header />
 
             <div className="home-page">

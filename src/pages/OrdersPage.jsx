@@ -4,6 +4,7 @@ import './OrdersPage.css'
 function Orders() {
     return (
         <>
+            <link rel="icon" type="image/svg+xml"to="/public/images/icons/orders-favicon.png" />
             <title>Orders</title>
 
             <Header />
@@ -54,11 +55,11 @@ function Orders() {
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link to="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
 
                             <div className="product-image-container">
@@ -82,11 +83,11 @@ function Orders() {
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link to="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -133,11 +134,11 @@ function Orders() {
                             </div>
 
                             <div className="product-actions">
-                                <a href="/tracking">
+                                <Link to="/tracking">
                                     <button className="track-package-button button-secondary">
                                         Track package
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
