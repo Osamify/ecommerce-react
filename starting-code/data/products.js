@@ -100,7 +100,7 @@ export const products = [
   },
   {
     id: "5968897c-4d27-4872-89f6-5bcb052746d7",
-    image: "images/products/women-striped-beach-dress.jpg",
+    image: "images/products/facial-tissue-2-ply-8-boxes.jpg",
     name: "Women's Striped Beach Dress",
     rating: {
       stars: 4.5,
