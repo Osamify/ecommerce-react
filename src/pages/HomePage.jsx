@@ -1,7 +1,18 @@
+import axios from 'axios'
+import { useEffect, useState } from 'react';
 import Header from '../components/Header';
-import { products } from '../../starting-code/data/products';
 import './HomePage.css'
 export function HomePage() {
+    const [products, setProducts] = useState([])
+
+
+    useEffect(() => {
+        axios.get('http://localhost:3000/api/products')
+        .then((Response) => {
+            setProducts(Response.data)
+        })
+    }, [])
+
     return (
         <>
             <link rel="icon" type="image/svg+xml" to="/images/icons/home-favicon.png" />
@@ -15,7 +26,7 @@ export function HomePage() {
                         <div key={product.id} className="product-container">
                             <div className="product-image-container">
                                 <img className="product-image"
-                                    src= {product.image} />
+                                    src={product.image} />
                             </div>
 
                             <div className="product-name limit-text-to-2-lines">
