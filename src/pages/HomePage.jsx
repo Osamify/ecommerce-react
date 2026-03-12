@@ -2,9 +2,8 @@ import axios from 'axios'
 import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import './HomePage.css'
-export function HomePage() {
+export function HomePage({ cart }) {
     const [products, setProducts] = useState([])
-    const [cart, setCart] = useState([])
 
 
     useEffect(() => {
@@ -79,7 +78,7 @@ export function HomePage() {
                         </div>
                     ))}
 
-                    {/* <div className="product-container">
+                    <div className="product-container">
                         <div className="product-image-container">
                             <img className="product-image"
                                 src="images/products/athletic-cotton-socks-6-pairs.jpg" />
@@ -224,7 +223,7 @@ export function HomePage() {
                         <button className="add-to-cart-button button-primary">
                             Add to Cart
                         </button>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </>
