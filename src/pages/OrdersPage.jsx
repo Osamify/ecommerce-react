@@ -1,10 +1,11 @@
 import Header from '../components/Header'
+import { Link } from 'react-router'
 import './OrdersPage.css'
 
 function Orders() {
     return (
         <>
-            <link rel="icon" type="image/svg+xml"to="/public/images/icons/orders-favicon.png" />
+            <link rel="icon" type="image/svg+xml" href="/public/images/icons/orders-favicon.png" />
             <title>Orders</title>
 
             <Header />
